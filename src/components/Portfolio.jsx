@@ -8,7 +8,7 @@ const Portfolio = () => {
   return (
     <section id="portfolio" className="container flex items-center mx-auto px-8 mt-4 md:mt-16 md:px-14 lg:px-32 w-full">
       <div className="w-full z-10 h-full">
-        <Zoom triggerOnce>
+        <Zoom triggerOnce direction="down">
           <h2 className="secondary-title">Portfolio</h2>
         </Zoom>
         <p className="section-paragraph">I’ve had the pleasure of designing and implementing both frontend and backend.</p>

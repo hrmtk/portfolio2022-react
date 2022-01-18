@@ -29,41 +29,48 @@ export const icons = [
   },
   {
     id: 5,
+    skill: "front end",
+    title: "Tailwind CSS",
+    img: "assets/tailwindcss-mark.79614a5f61617ba49a0891494521226b.svg",
+    alt: "tailwindcss"
+  },
+  {
+    id: 6,
     skill: "back end",
     title: "Python",
     img: "https://img.icons8.com/color/48/000000/python--v1.png",
     alt: "python"
   },
   {
-    id: 6,
+    id: 7,
     skill: "back end",
     title: "django",
     img: "https://img.icons8.com/external-tal-revivo-green-tal-revivo/36/000000/external-django-a-high-level-python-web-framework-that-encourages-rapid-development-logo-green-tal-revivo.png",
     alt: "django"
   },
   {
-    id: 7,
+    id: 8,
     skill: "back end",
     title: "SQL",
     img: "https://img.icons8.com/external-wanicon-two-tone-wanicon/64/000000/external-sql-server-big-data-wanicon-two-tone-wanicon.png",
     alt: "sql"
   },
   {
-    id: 8,
+    id: 9,
     skill: "tools",
     title: "Heroku",
     img: "https://img.icons8.com/color/48/000000/heroku.png",
     alt: "heroku"
   },
   {
-    id: 9,
+    id: 10,
     skill: "tools",
     title: "Netlify",
     img: "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/48/000000/external-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-static-websites-logo-shadow-tal-revivo.png",
     alt: "netflify"
   },
   {
-    id: 10,
+    id: 11,
     skill: "tools",
     title: "Git",
     img: "https://img.icons8.com/color/48/000000/git.png",

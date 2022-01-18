@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import CallMergeIcon from '@mui/icons-material/CallMerge';
 import CloseIcon from '@mui/icons-material/Close';
 import MenuOpenIcon from '@mui/icons-material/MenuOpen';
 import { NavLink, Link } from 'react-router-dom';
+import { myIcon } from '../utils/imagePath';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -25,16 +25,14 @@ const Navbar = () => {
   window.addEventListener('scroll', changeBackground);
 
   return (
-    <nav className={`bg-body z-30 w-full h-20 sticky top-0 duration-300 ${navbar && 'bg-nav opacity-90'}`}>
+    <nav className={`bg-body z-30 w-full h-20 sticky top-0 ${navbar && 'bg-nav opacity-90'}`}>
       <section id="home" className="w-full  md:flex flex justify-between items-center py-6 px-8 mx-auto md:px-14 lg:px-24">
-        <div className="text-xl text-white font-bold cursor-pointer flex items-center hover:text-stone-300 duration-300">
-          <Link to="/">
-            <span className={`text-theme text-3xl mr-1 pt-2`}>
-              <CallMergeIcon style={{ fontSize: 30 }}/>
+        <Link to="/" className="text-xl text-white font-bold cursor-pointer flex justify-between items-center h-full hover:text-stone-300 duration-300">
+            <span className="mr-2">
+            <img src={myIcon[0].img} alt="my-icon" />
             </span>
-            Hiro Takada
-          </Link>
-        </div>
+            <div>Hiro Takada</div>
+        </Link>
   
         <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static md:z-auto z-40 left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-20 opacity-90 bg-black':'top-[-490px]'} md:opacity-100 p-3 md:p-0 text-center `}>
           {
