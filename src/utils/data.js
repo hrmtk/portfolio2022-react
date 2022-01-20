@@ -1,6 +1,17 @@
 export const products = [
   {
     id: 1,
+    title: "kimito",
+    subtitle: "Photo sharing app with React and Sanity.io",
+    description: "'kimito' is a social media app that allows users to create, edit, delete and save posts. Users can comment on other people's posts to interact with each other. And users can search specific images with words or categories. To enhance the user experience used Google Authentication for login and added features like switching from light mode to dark mode.",
+    tech: ["React", "Tailwind CSS", "Sanity.io", "Google Authentication"],
+    img: "assets/kimito.png",
+    live: "https://kimito.netlify.app",
+    youtube: "https://youtu.be/HGtpXrDt2ns",
+    github: "https://github.com/hrmtk/kimito"
+  },
+  {
+    id: 2,
     title: "Natural Event Tracker",
     subtitle: "Web app with React",
     description: "A web app for showing natural events using React, NASA EONET API, and Google Maps API. Users can choose several events to show and limit the number of prior days from which events will be returned.",
@@ -11,7 +22,7 @@ export const products = [
     github: "https://github.com/hrmtk/natural-event-tracker"
   },
   {
-    id: 2,
+    id: 3,
     title: "Manabit",
     subtitle: "Quiz app with Django",
     description: "This Web App has been built for learners who bring a lot of energy and enthusiasm to acquire new knowledge and skills. Users are able to create their quizzes, take them, view the score, and check all of their results.",
@@ -22,7 +33,7 @@ export const products = [
     github: "https://github.com/hrmtk/django-quiz-app"
   }, 
   {
-    id: 3,
+    id: 4,
     title: "Auctions",
     subtitle: "E-commerce with Django",
     description: "Design an eBay-like e-commerce auction site that will allow users to post auction listings, place bids on listings, comment on those listings, and add listings to a “watchlist.",
