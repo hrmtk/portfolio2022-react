@@ -1,4 +1,5 @@
 import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { AttentionSeeker } from 'react-awesome-reveal';
 import Footer from './Footer';
 
@@ -37,6 +38,9 @@ const Contact = () => {
 						<div className="flex mt-10 md:mt-20 space-x-6">
 							<a href="https://github.com/hrmtk" className="text-theme hover:text-title" target="_blank" rel="noreferrer">
 								<GitHubIcon  style={{ fontSize: 30 }}/>
+							</a>
+							<a href="https://www.linkedin.com/in/hiro-takada-881b34228" className="text-theme hover:text-title" target="_blank" rel="noreferrer">
+								<LinkedInIcon  style={{ fontSize: 30 }}/>
 							</a>
 						</div>
 					</div>
