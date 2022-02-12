@@ -18,7 +18,7 @@ export const products = [
     tech: ["React", "JavaScript", "Sass", "NASA API", "Google Maps API"],
     img: "assets/net.png",
     live: "https://hrmtk-naturaleventtracker.netlify.app/",
-    youtube: "https://youtu.be/EHqpn9Xm5ZY",
+    youtube: "https://youtu.be/CGv2WdZYz0w",
     github: "https://github.com/hrmtk/natural-event-tracker"
   },
   {
