@@ -4,8 +4,8 @@ import { AttentionSeeker } from 'react-awesome-reveal';
 import Footer from './Footer';
 
 const Contact = () => {
-  return (
-    <div className="container flex justify-between items-center mx-auto px-8 mt-4 md:mt-16 md:px-14 lg:px-32 w-full">
+	return (
+		<div className="container flex justify-between items-center mx-auto px-8 mt-4 md:mt-16 md:px-14 lg:px-32 w-full">
 			<section id="contact" className="w-full">
 
 				<h2 className="secondary-title">Contact</h2>
@@ -45,7 +45,7 @@ const Contact = () => {
 						</div>
 					</div>
 				</form>
-				
+					
 				<Footer />
 			</section>
 		</div>

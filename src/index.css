@@ -35,27 +35,3 @@ html, body {
 .badge {
   @apply px-4 py-2 text-sm rounded bg-badge;
 }
-
-/* [id] { */
-/* scroll-margin-top: 60px; */
-/* } */
-
-/* .left-percentage {
-  left: 5%;
-}
-
-.h-screen-partial {
-  height: 80vh;
-}
-
-.nav-dot {
-  transition: background 200ms, border-color 200ms;
-}
-
-.selected-circle {
-  @apply border-theme bg-theme;
-}
-
-.nav-dot:hover span {
-  opacity: 1;
-} */

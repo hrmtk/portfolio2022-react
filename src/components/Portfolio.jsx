@@ -15,6 +15,7 @@ const Portfolio = () => {
 
         <div className="md:h-full flex items-center text-gray-600">
           <div className="flex flex-wrap -m-4">
+            
             {products.map((p) => (
               <div key={p.id} className="p-4 sm:w-1/2 lg:w-1/3">
                 <div className="h-full border border-nav rounded-lg overflow-hidden">
@@ -37,6 +38,7 @@ const Portfolio = () => {
                 </div>
               </div>
             ))}
+
           </div>
         </div>
       </div>
