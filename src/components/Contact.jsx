@@ -28,7 +28,7 @@ const Contact = () => {
 						</div>
 
 						<AttentionSeeker effect="tada" duration="2000">
-							<button type="submit" className="px-6 py-2 bg-theme text-white font-bold hover:bg-blue-500">Send</button>
+							<button type="submit" className="px-6 py-2 bg-theme text-white font-bold hover:bg-blue-500 transform transition-colors duration-500">Send</button>
 						</AttentionSeeker>
 					</div>
 
@@ -36,10 +36,10 @@ const Contact = () => {
 						<a href="mailto:hirohrmtk@gmail.com" className="text-secondary hover:text-stone-300 underline mt-3 block">hirohrmtk@gmail.com</a>
 
 						<div className="flex mt-10 md:mt-20 space-x-6">
-							<a href="https://github.com/hrmtk" className="text-theme hover:text-title" target="_blank" rel="noreferrer">
+							<a href="https://github.com/hrmtk" className="text-theme hover:text-title transform transition-colors duration-500" target="_blank" rel="noreferrer">
 								<GitHubIcon  style={{ fontSize: 30 }}/>
 							</a>
-							<a href="https://www.linkedin.com/in/hiro-takada-881b34228" className="text-theme hover:text-title" target="_blank" rel="noreferrer">
+							<a href="https://www.linkedin.com/in/hiro-takada-881b34228" className="text-theme hover:text-title transform transition-colors duration-500" target="_blank" rel="noreferrer">
 								<LinkedInIcon  style={{ fontSize: 30 }}/>
 							</a>
 						</div>

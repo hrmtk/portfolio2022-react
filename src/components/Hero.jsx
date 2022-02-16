@@ -13,7 +13,7 @@ const Hero = () => {
             <h1 className="font-bold text-6xl text-stone-300 lg:text-7xl text-center md:text-left">progress</h1>
           </Slide>
         </div>
-        <img key={tech[0].id} src={tech[0].img} alt="technology" className="w-full md:w-3/4 md:absolute mt-0 right-0 z-0" />
+        <img key={tech[0].id} src={tech[0].img} alt="technology" className="w-full md:w-3/4 md:absolute mt-0 right-0 z-0 animate-pulse" />
       </section>
     </div>
   )

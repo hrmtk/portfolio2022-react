@@ -18,10 +18,10 @@ const Portfolio = () => {
             
             {products.map((p) => (
               <div key={p.id} className="p-4 sm:w-1/2 lg:w-1/3">
-                <div className="h-full border border-nav ease-in rounded-lg overflow-hidden">
+                <div className="h-full border border-nav rounded-lg overflow-hidden">
                   <img className="lg:h-72 md:h-48 w-full object-cover object-center"
                         src={p.img} alt={p.title} />
-                  <div className="p-6 h-full hover:bg-blue-700 hover:text-white">
+                  <div className="p-6 h-full hover:bg-blue-700 hover:text-white transform transition-colors duration-700">
 
                     <Fade cascade triggerOnce>
                       <h2 className="text-base font-medium text-indigo-300 mb-1">{p.subtitle}</h2>
