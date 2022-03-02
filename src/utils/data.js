@@ -1,17 +1,6 @@
 export const products = [
   {
     id: 1,
-    title: "kimito",
-    subtitle: "Photo sharing app with React and Sanity.io",
-    description: "'kimito' is a social media app that allows users to create, edit, delete and save posts. Users can comment on other people's posts to interact with each other. And users can search specific images with words or categories. To enhance the user experience used Google Authentication for login and added features like switching from light mode to dark mode.",
-    tech: ["React", "Tailwind CSS", "Sanity.io", "Google Authentication"],
-    img: "assets/kimito.png",
-    live: "https://kimito.netlify.app",
-    youtube: "https://youtu.be/HGtpXrDt2ns",
-    github: "https://github.com/hrmtk/kimito"
-  },
-  {
-    id: 2,
     title: "Natural Event Tracker",
     subtitle: "Web app with React",
     description: "A web app for showing natural events using React, NASA EONET API, and Google Maps API. Users can choose several events to show and limit the number of prior days from which events will be returned.",
@@ -20,6 +9,17 @@ export const products = [
     live: "https://hrmtk-naturaleventtracker.netlify.app/",
     youtube: "https://youtu.be/CGv2WdZYz0w",
     github: "https://github.com/hrmtk/natural-event-tracker"
+  },
+  {
+    id: 2,
+    title: "kimito",
+    subtitle: "Photo sharing app with React and Sanity.io",
+    description: "'kimito' is a social media app that allows users to create, edit, delete and save posts. Users can comment on other people's posts to interact with each other. And users can search specific images with words or categories. To enhance the user experience used Google Authentication for login and added features like switching from light mode to dark mode.",
+    tech: ["React", "Tailwind CSS", "Sanity.io", "Google Authentication"],
+    img: "assets/kimito.png",
+    live: "https://kimito.netlify.app",
+    youtube: "https://youtu.be/HGtpXrDt2ns",
+    github: "https://github.com/hrmtk/kimito"
   },
   {
     id: 3,
@@ -31,7 +31,7 @@ export const products = [
     live: "https://hrmtk-manabit.herokuapp.com/",
     youtube: "https://youtu.be/AYnMPwP31v8",
     github: "https://github.com/hrmtk/django-quiz-app"
-  }, 
+  },
   {
     id: 4,
     title: "Auctions",
