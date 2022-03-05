@@ -2,7 +2,32 @@ import { products } from "../utils/data";
 import ComputerIcon from '@mui/icons-material/Computer';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import { Fade, Zoom } from "react-awesome-reveal";
+import { Zoom } from "react-awesome-reveal";
+import { motion } from 'framer-motion';
+
+const variants = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.5
+    }
+  }
+}
+
+const item = {
+  hidden: {
+    opacity: 0,
+    y: -50
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.8
+    }
+  }
+}
 
 const Portfolio = () => {
   return (
@@ -13,17 +38,25 @@ const Portfolio = () => {
         </Zoom>
         <p className="section-paragraph">I’ve had the pleasure of designing and implementing both frontend and backend.</p>
 
-        <div className="md:h-full flex items-center text-gray-600">
+        <motion.div
+          className="md:h-full flex items-center text-gray-600"
+          variants={variants}
+          initial="hidden"
+          animate="show"
+        >
           <div className="flex flex-wrap -m-4">
             
             {products.map((p) => (
-              <div key={p.id} className="p-4 sm:w-1/2 lg:w-1/3">
+              <motion.div
+                key={p.id}
+                className="p-4 md:w-1/2 xl:w-1/3"
+                variants={item}
+                >
                 <div className="h-full border border-nav rounded-lg overflow-hidden">
                   <img className="lg:h-72 md:h-48 w-full object-cover object-center"
                         src={p.img} alt={p.title} />
                   <div className="p-6 h-full hover:bg-blue-700 hover:text-white transform transition-colors duration-700">
 
-                    <Fade cascade triggerOnce>
                       <h2 className="text-base font-medium text-indigo-300 mb-1">{p.subtitle}</h2>
                       <h1 className="text-2xl font-semibold mb-3">{p.title}</h1>
                       <p className="leading-relaxed mb-3">{p.description}</p>
@@ -32,15 +65,14 @@ const Portfolio = () => {
                           {p.youtube && <a href={p.youtube} target="_blank" rel="noreferrer"><YouTubeIcon className="hover:text-indigo-300 ease-in" /></a>}
                         <a href={p.github} target="_blank" rel="noreferrer"><GitHubIcon className="hover:text-indigo-300 ease-in" /></a>
                       </div>
-                    </Fade>
 
                   </div>
                 </div>
-              </div>
+              </motion.div>
             ))}
 
           </div>
-        </div>
+        </motion.div>
       </div>
   </section>
   )
